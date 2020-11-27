@@ -1,5 +1,8 @@
 remote_theme: pmarsceill/just-the-docs
 collections:
+  intro:
+    permalink: "/:collection/:path/"
+    output: true
   docs:
     permalink: "/:collection/:path/"
     output: true
@@ -9,6 +12,8 @@ collections:
 
 just_the_docs:
   collections:
+    intro:
+      name: Introduction
     docs:
       name: Documentation
     tutorials:

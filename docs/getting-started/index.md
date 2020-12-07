@@ -1,11 +1,26 @@
 ---
 title: Getting Started
-excerpt: In this section you'll find basic information about Libris and how to use it.
+excerpt: Getting started with Pixel Badge.
 layout: docs
 ---
 
-Ut quis consequat risus. Aenean ut porta ligula. Morbi id ante eu nisi suscipit maximus. Fusce ac congue quam. Nulla id elit facilisis, consequat magna vitae, scelerisque elit. Nullam lacinia elit in arcu scelerisque, ac volutpat neque sodales.
+In this section you'll learn about powering your badge.
+
+## Powering
+You can power your badge via either USB C, or an 18650 lithium-ion battery. Its USB does not require USB PD, and you can plug it into any USB 3.0 computer or (phone) charger. If you use a li-ion battery, the positive end should point towards the USB connector. The battery will charge when USB is connected.
+
+<div class="note">
+<strong>Important:</strong>
+Please be very careful with lithium-ion batteries. The Pixel Badge contains protection circuitry against overcharging, excessive current draw, and undervoltage, but please don't put them to the test.
+
+If you're not using your badge, always disconnect the battery. Don't have a battery in your badge if it's continuously on USB power.
+</div>
+
+![Pixel Badge power inputs](/images/pixel_badge_back_power.png)
+
+## First time boot
+When you power on your badge for the first time, you are greeted with a special boot animation. It's on the highest brightness at this point, so be ready..!
 
 ***
 
-Here are the articles in this section:
+Learn more about your badge in these sections:

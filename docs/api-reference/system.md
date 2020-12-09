@@ -30,7 +30,7 @@ The *system* API allows you to control basic features your app needs to provide 
 
 ```
 import system
-system.start("2048") # Start the 2048 app (fails if this app has not been installed)
+system.start("snake") # Start the snake app
 ```
 
 ### Going back to the launcher
@@ -54,7 +54,7 @@ import system
 system.reboot()
 ```
 
-### Querying the name of the currently runnig app
+### Querying the name of the currently running app
 ```
 import system
 appName = system.currentApp()

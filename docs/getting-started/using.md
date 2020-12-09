@@ -18,4 +18,6 @@ The badge boots into a launcher application, from which you can run all the apps
 
 You can remove any app that you install through the app store by pressing **B** in the launcher. System apps are protected from removal. Source code of these system apps can be found [on Github](https://github.com/badgeteam/ESP32-platform-firmware/tree/feature/pixel/firmware/python_modules/pixel).
 
-In the launcher you can adjust the brightness of the display with the **left**/**right** buttons. You might want to decrease the brightness a bit now, as the Pixel ships with maximum brightness configured.. :)
+<div class="info">
+In the launcher you can adjust the brightness of the display with the <strong>left</strong>/<strong>right</strong> buttons. You might want to decrease the brightness a bit now, as the Pixel ships with maximum brightness configured.. :)
+</div>

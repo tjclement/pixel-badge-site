@@ -438,6 +438,15 @@ img {
 }
 
 /* Notifications */
+.info {
+  background: lighten(_palette(info),40%);
+  border-left: 5px solid _palette(info);
+  border-radius: 5px;
+  color: _palette(secondary);
+  margin-bottom: 1.875em;
+  padding: 1em 1.125em;
+}
+
 .note {
   background: lighten(_palette(note),40%);
   border-left: 5px solid _palette(note);

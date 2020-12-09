@@ -6,7 +6,9 @@ layout: docs
 
 The Pixel contains an ESP32 that can do 2.4GHz WiFi. The app store and a few of the preinstalled apps need WiFi to work, so let's set it up.
 
+<div class="info">
 A fresh Pixel will try to connect to a network called "PixelBadge" with also "PixelBadge" as password. You can use your phone as a hotspot to give your badge internet access, but it's nicer to connect it to a real WiFi network.
+</div>
 
 There are two ways of connecting to your own WiFi, which are explained below.
 

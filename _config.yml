@@ -40,10 +40,10 @@ header:
 #      url: /blog
 #      style: link
 #      has_subnav: false
-    - label: Tutorials
-      url: /tutorials
-      style: link
-      has_subnav: false
+#    - label: Tutorials
+#      url: /tutorials
+#      style: link
+#      has_subnav: false
 #    - label: Sample Pages
 #      url: '#'
 #      style: link

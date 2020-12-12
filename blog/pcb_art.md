@@ -32,7 +32,7 @@ Indeed, after getting some weird looks from a company that normally makes physic
 
 This initial print used standard CMYK UV ink, plus a separate white UV ink for the whites.
 
-The result looked great, but we hit the same problem others before us had hit: putting printed PCBs in a reflow oven messes with the colours a lot. You might remark that it makes more sense to print on the PCBs after they have been pick&placed and soldered. However, the print accuracy of inkjet printers is a function of the distance between the print jet and the object. Our print could only move 3mm above the PCB (which was not enough for our components), and even if it could move higher the print quality would be quite bad. So instead we worked on getting the UV ink handle reflowing better.  
+The result looked great, but we hit the same problem others before us had hit: putting printed PCBs in a reflow oven messes with the colours a lot. You might remark that it makes more sense to print on the PCBs after they have been pick&placed and soldered. However, the print accuracy of inkjet printers is a function of the distance between the print jet and the object. Our printer could only move 3mm above the PCB (which was not enough for our components), and even if it could move higher the print quality would be quite bad. So instead we worked on getting the UV ink handle reflowing better.  
 
 ## Lesson 1: making white stay white
 

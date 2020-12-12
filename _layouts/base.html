@@ -1,14 +1,19 @@
 <!doctype html>
 <html lang="en">
     <head>    
-
         <title>{% assign title_is_not_empty = page.title | is_not_empty %}{% if title_is_not_empty %}{{ page.title }} - {% endif %}{{ site.title }}</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" content="{{ page.excerpt | default: site.description }}"/>
         <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i%26display=swap" rel="stylesheet"> 
         <link rel="stylesheet" href="{{ 'assets/css/main.css' | relative_url }}">
-        
+        {% assign image_is_not_empty = page.image | is_not_empty %}
+        {% if image_is_not_empty %}
+        <meta name="og:image" href="{{ page.image | absolute_url }}"/>
+        <meta name="twitter:card" content="summary_large_image" />
+        {% else %}
+        <meta name="twitter:card" content="summary" />
+        {% endif %}
     </head>
     <body>
         

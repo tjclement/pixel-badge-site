@@ -1,6 +1,6 @@
 ---
 title: Blog
-subtitle: This is an optional subtitle for the blog page
+subtitle: Writeups about a few of the things we're up to.
 image: images/5.jpg
 has_more_link: true
 more_link_text: Read more

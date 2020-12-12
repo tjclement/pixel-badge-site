@@ -36,10 +36,10 @@ header:
       url: /docs
       style: link
       has_subnav: false
-#    - label: Blog
-#      url: /blog
-#      style: link
-#      has_subnav: false
+    - label: Blog
+      url: /blog
+      style: link
+      has_subnav: false
 #    - label: Tutorials
 #      url: /tutorials
 #      style: link

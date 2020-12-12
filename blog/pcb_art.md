@@ -2,7 +2,7 @@
 title: A new tool in PCB design? How we made full colour PCB art
 excerpt: >-
   This post describes our initial ideas, the common pitfalls, and finally a working way of adding full colour PCB art to electronics projects.
-date: '2019-12-11'
+date: '2020-12-11'
 image: images/pixel_badge_back.png
 layout: post
 ---

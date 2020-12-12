@@ -14,6 +14,8 @@
         {% else %}
         <meta name="twitter:card" content="summary" />
         {% endif %}
+        <meta name="og:title" content="{% assign title_is_not_empty = page.title | is_not_empty %}{% if title_is_not_empty %}{{ page.title }} - {% endif %}{{ site.title }}" />
+        <meta name="twitter:title" content="{% assign title_is_not_empty = page.title | is_not_empty %}{% if title_is_not_empty %}{{ page.title }} - {% endif %}{{ site.title }}" />
     </head>
     <body>
         

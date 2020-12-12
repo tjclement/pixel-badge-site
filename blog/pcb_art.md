@@ -42,7 +42,7 @@ After reflowing, the boards looked like this:
 
 You'll notice that all colours become a bit more dim. Red seems to lose more of its edge than green and blue. Most importantly though, the white ink is turned into a nasty aged yellow. Most of the colour changes we could live with, so we didn't correct for them in our designs (you'll see later that our final art worked nicely with the reflow process). In general one can try to correct for the changes in their source design, of course.
 
-The whites were totally unacceptable though. It made the badge look old and yucky. We considered diving into the world of different UV inks, and finding a white ink that was more heat tolerant. Then we had a simple realisation though: the perfect heat resistant white ink we knew was simply white soldermask or silkscreen. Because we want to keep the front of the badge black to keep nice contrast, we opted for keeping the mask black and experimented with white silkscreen on the back.
+The whites were totally unacceptable though. It made the badge look old and yucky. We considered diving into the world of different UV inks, and finding a white ink that was more heat tolerant. Then we had a simple realisation though: the perfect heat resistant white ink we all know already was simply white soldermask or silkscreen. Because we want to keep the front of the badge black to keep nice contrast, we opted for keeping the mask black and experimented with white silkscreen on the back.
 
 So we modified our art such that the white parts were cut out of the design, which meant no ink would be placed there, and made PCBs that were completely covered with white silk outside of the component pads. The result was awesome, even after reflowing:
 

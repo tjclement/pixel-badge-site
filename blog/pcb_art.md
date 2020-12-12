@@ -66,7 +66,7 @@ Aside from this, it is in general hard to get sub-mm accuracy on big industrial 
 
 ## Lesson 3: more pin margin == more better
 
-The alignment issue of the previous section was enlarged because we were stubborn. We felt that having close to no whitespace around pads (0.1mm) would look so much better, so literally any misalignment would immediately cause pads to be partially overprinted. It does look incredible in our opinion, but was the cause for a lot of blood, sweat, and tears. We struggled to get our failure rates below 50% (which is rediculously high; normally we would want <1%).
+The alignment issue of the previous section was enlarged because we were stubborn. We felt that having close to no whitespace around pads (0.1mm) would look so much better, so literally any misalignment would immediately cause pads to be partially overprinted. It does look incredible in our opinion, but was the cause for a lot of blood, sweat, and tears. We struggled to get our failure rates below 50% (which is ridiculously high; normally we would want <1%).
 
 This makes the [Founder's Edition](/#buy){:target="_blank"} extra special, as it is highly likely our last project that will have this insanely tight printing margin!
 ![Full colour art on the Pixel Badge](/images/pixel_badge_back.png)

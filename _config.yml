@@ -1,4 +1,5 @@
 title: Pixel Badge ESP32 LED devboard
+url: https://pixel.curious.supplies
 baseurl: /
 permalink: '/:title/'
 collections:

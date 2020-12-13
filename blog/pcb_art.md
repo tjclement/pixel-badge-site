@@ -68,7 +68,7 @@ Aside from this, it is in general hard to get sub-mm accuracy on big industrial 
 
 The alignment issue of the previous section was enlarged because we were stubborn. We felt that having close to no whitespace around pads (0.1mm) would look so much better, so literally any misalignment would immediately cause pads to be partially overprinted. It does look incredible in our opinion, but was the cause for a lot of blood, sweat, and tears. We struggled to get our failure rates below 50% (which is ridiculously high; normally we would want <1%).
 
-This makes the [Founder's Edition](/#buy){:target="_blank"} extra special, as it is highly likely our last project that will have this insanely tight printing margin!
+This makes the [Founder's Edition](/){:target="_blank"} extra special, as it is highly likely our last project that will have this insanely tight printing margin!
 ![Full colour art on the Pixel Badge](/images/pixel_badge_back.png)
 
 For future projects, we will probably use a ~1mm margin around pins to make our life easier. For making this margin less apparent, we'll likely incorporate the underlying mask or silk colour in the design. That way you're not looking at chunks of white across the board :)
@@ -76,6 +76,11 @@ For future projects, we will probably use a ~1mm margin around pins to make our 
 ## So what now?
 
 By sharing what we did, we hope to make you all excited about getting full-colour art on your designs. We'd be super psyched especially to see the [#badgelife](https://twitter.com/search?q=badgelife){:target="_blank"} community pick up this neat trick for other event badges.
+
+<br>
+
+And, if you're still looking for something to do this Christmas and like WiFi-enabled LEDs you can program in Python: you can still get one of our [Pixel Badges here](/){:target="_blank"}. Happy holidays!
+<iframe src="https://player.vimeo.com/video/490463591" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 
 <br>
 

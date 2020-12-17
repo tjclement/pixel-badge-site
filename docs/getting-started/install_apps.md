@@ -15,3 +15,7 @@ You can install apps directly from the Pixel, or from the USB menu. Here, we'll 
 ## Installing via the USB menu
 * After [connecting via USB](/docs/getting-started/connecting), go to the _Installer_ option.
 * Here you can see the app categories and install apps, just like you would on your badge.
+
+<div class="info">
+You can also see a list of all available apps at <a href="https://hatchery.badge.team/badge/pixel" target="_blank">https://hatchery.badge.team/badge/pixel</a>. More information about the badge.team Hatchery is given on the <a href="/docs/app-development/publishing">App Publishing page</a>.
+</div>

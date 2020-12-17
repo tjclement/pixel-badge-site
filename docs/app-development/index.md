@@ -4,9 +4,9 @@ excerpt: In this section you'll learn how to write your own Python apps for the 
 layout: docs
 ---
 
-The documentation on how to write apps is on its way. Coming any day now, pinky swear!
+In this section, we'll go over how you can write apps yourself. Many of the cool apps already on the store were made by the community, and we're excited about making more together!
 
-In the mean time, you can already check out the [API reference](/docs/api-reference) documentation to see what's available to you in the Python shell via USB.
+Be sure to also check out the [API reference](/docs/api-reference) documentation to see what's available to you in the Python shell via USB.
 
 ***
 

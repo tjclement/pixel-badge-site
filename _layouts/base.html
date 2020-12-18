@@ -13,8 +13,8 @@
         <meta name="twitter:title" content="{% assign title_is_not_empty = page.title | is_not_empty %}{% if title_is_not_empty %}{{ page.title }} - {% endif %}{{ site.title }}" />
         {% assign image_is_not_empty = page.image | is_not_empty %}
         {% if image_is_not_empty %}
-        <meta property="og:image" href="{{ page.image | absolute_url }}"/>
-        <meta name="twitter:image" href="{{ page.image | absolute_url }}"/>
+        <meta property="og:image" content="{{ page.image | absolute_url }}"/>
+        <meta name="twitter:image" content="{{ page.image | absolute_url }}"/>
         <meta name="twitter:card" content="summary_large_image" />
         {% else %}
         <meta name="twitter:card" content="summary" />

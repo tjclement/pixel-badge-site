@@ -1,0 +1,4 @@
+---
+title: Tindie
+layout: docs
+---

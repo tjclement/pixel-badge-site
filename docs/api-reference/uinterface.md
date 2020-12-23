@@ -20,14 +20,35 @@ The *uinterface* API allows you to perform different visuals that help the user 
 
 ## Examples
 
-### Register a button handler function
+### Ask the user to confirm or cancel, with visuals
 ```python
-import buttons, defines
+import uinterface
 
-def my_callback(button_is_down):
-    if button_is_down:
-        # Do stuff
-        pass
+if uinterface.confirmation_dialog('Do it?'):
+    print('Doing it')
+else:
+    print('Not doing it')
+```
 
-buttons.register(defines.BTN_A, my_callback)
+### Show a scrolling text message that blocks until fully shown or until user skips
+```python
+import uinterface
+
+print('showing message')
+uinterface.skippabletext('You can cancel this, or wait until it has been shown')
+
+# This is executed only after the message has been shown (or user cancels with A or B) 
+rgb.clear()
+print('done')
+```
+
+### Show a menu with multiple selectable items
+```python
+import uinterface
+
+options = ['option1', 'option 2', 'option 3']
+selected = ['option 2']
+uinterface.skippabletext('Select something')  # Allows a user to skip the message with A or B
+selected = uinterface.menu(options, selected=selected)
+uinterface.skippabletext('Your choices: ' + str(selected))
 ```

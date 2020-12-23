@@ -5,7 +5,7 @@ weight: 60
 layout: docs
 ---
 
-The virtualtimers module lets you regularly fire a function without holding up other Python logic. It is useful to update the screen for example, whilst keeping button presses low-latency. If you replace `time.sleep()` with functions called by virtualtimers, your app will feel much more snappy. 
+The *virtualtimers* module lets you regularly fire a function without holding up other Python logic. It is useful to update the screen for example, whilst keeping button presses low-latency. If you replace `time.sleep()` with functions called by virtualtimers, your app will feel much more snappy. 
 
 ## Reference
 

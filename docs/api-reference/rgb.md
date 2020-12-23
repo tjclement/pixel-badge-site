@@ -5,7 +5,7 @@ weight: 14
 layout: docs
 ---
 
-All display features can be accessed through the rgb module.
+All display features can be accessed through the *rgb* module.
 
 ## Reference
 

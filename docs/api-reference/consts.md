@@ -5,7 +5,7 @@ weight: 9999
 layout: docs
 ---
 
-The consts module allows you to query some of the properties of the badge hardware and firmware. It exposes a few static variables that are compiled into the firmware.
+The *consts* module allows you to query some of the properties of the badge hardware and firmware. It exposes a few static variables that are compiled into the firmware.
 
 ---
 

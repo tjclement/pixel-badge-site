@@ -5,7 +5,7 @@ layout: docs
 ---
 
 ## Powering
-You can power your badge via either USB C, or an 18650 lithium-ion battery. Its USB does not require USB PD, and you can plug it into any USB 3.0 computer or (phone) charger. If you use a li-ion battery, the positive end should point towards the USB connector. The battery will charge when USB is connected.
+You can power your badge via either USB C, or a (flat-top) 18650 lithium-ion battery. Its USB does not require USB PD, and you can plug it into any USB 3.0 computer or (phone) charger. If you use a li-ion battery, the positive end should point towards the USB connector. The battery will charge when USB is connected.
 
 <div class="note">
 <strong>Important:</strong>

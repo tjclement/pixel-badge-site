@@ -12,6 +12,16 @@ No, the Pixel is perfectly happy being powered only by its USB C port. You can i
 
 ***
 
+## Can I use any 18650 li-ion battery?
+
+We know for sure that all flat-top 18650 cells work. We use 2600mAh ones, and they last many days with our intermittent use.
+
+There are also 18650 cells with a built-in protection circuit. These are a bit taller than normal ones. The same goes for button-top cells. Some of these cells may fit as well, but we can't promise they will.
+
+One person has let us know that a cell with both a protection circuit _and_ a button-top (6mm taller than normal) does not fit.
+
+***
+
 ## Can I make my own diffuser?
 
 Absolutely! Our diffuser design will be made public when it's done, and there are a [few existing designs](https://www.thingiverse.com/search?q=campzone+2019&type=things&sort=relevant) for the CampZone 2019 event badge that the Pixel was based on.

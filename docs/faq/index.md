@@ -16,6 +16,9 @@ No, the Pixel is perfectly happy being powered only by its USB C port. You can i
 
 We know for sure that all flat-top 18650 cells work. We use 2600mAh ones, and they last many days with our intermittent use.
 
+Current draw at full brightness is expected to be between 1.5A and 2A at the cell.
+For optimal performance make sure your cell has a max continuous discharge rate of 5A or more.
+
 There are also 18650 cells with a built-in protection circuit. These are a bit taller than normal ones. The same goes for button-top cells. Some of these cells may fit as well, but we can't promise they will.
 
 One person has let us know that a cell with both a protection circuit _and_ a button-top (6mm taller than normal) does not fit.

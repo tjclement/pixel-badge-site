@@ -1,7 +1,10 @@
 ---
 title: Welcome
 layout: docs
+image: images/pixel_badge_back.png
 ---
+
+![](/images/pixel_badge_back.png)
 
 ### About
 

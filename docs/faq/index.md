@@ -27,7 +27,7 @@ One person has let us know that a cell with both a protection circuit _and_ a bu
 
 ## Can I make my own diffuser?
 
-Absolutely! Our diffuser design will be made public when it's done, and there are a [few existing designs](https://www.thingiverse.com/search?q=campzone+2019&type=things&sort=relevant) for the CampZone 2019 event badge that the Pixel was based on.
+Absolutely! You can print your own [using our design](https://www.thingiverse.com/thing:4689368), and there are a [few alternate designs and additional printable accessories](https://www.thingiverse.com/search?q=campzone+2019&type=things&sort=relevant) for the CampZone 2019 event badge that the Pixel was based on.
 
 ***
 

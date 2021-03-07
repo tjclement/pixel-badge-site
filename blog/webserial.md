@@ -1,7 +1,7 @@
 ---
 title: WebSerial - The next big thing for badges and devboards?
 excerpt: >-
-  Talk to serial devices from your browser, making electronics much more approachable for beginners. 
+  New API lets you talk to serial devices from your browser, making electronics much more approachable for beginners. 
 date: '2021-03-08'
 image: images/pixel_nyan.png
 layout: post

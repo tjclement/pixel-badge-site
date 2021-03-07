@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="en">
+    <head>    
+        <title>WebSerial - The next big thing for badges and devboards? - Pixel Badge ESP32 LED devboard</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="New API lets you talk to serial devices from your browser, making electronics much more approachable for beginners. "/>
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i%26display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="/assets/css/main.css">
+
+        <meta property="og:title" content="WebSerial - The next big thing for badges and devboards? - Pixel Badge ESP32 LED devboard" />
+        <meta property="og:type" content="website" />
+        <meta name="twitter:title" content="WebSerial - The next big thing for badges and devboards? - Pixel Badge ESP32 LED devboard" />
+        
+        
+        <meta property="og:image" content="https://pixel.curious.supplies/images/pixel_nyan.png"/>
+        <meta name="twitter:image" content="https://pixel.curious.supplies/images/pixel_nyan.png"/>
+        <meta name="twitter:card" content="summary_large_image" />
+        
+    </head>
+    <body>
+        
+        <div id="page" class="site">
+  <header id="masthead" class="site-header outer">
+  <div class="inner">
+    <div class="site-header-inside">
+      <div class="site-branding">
+        
+        
+        <p class="site-title"><a href="/">Pixel Badge</a></p>
+        
+      </div><!-- .site-branding -->
+      
+      
+      <nav id="main-navigation" class="site-navigation" aria-label="Main Navigation">
+        <div class="site-nav-inside">
+          <button id="menu-close" class="menu-toggle"><span class="screen-reader-text">Open Menu</span><span class="icon-close" aria-hidden="true"></span></button>
+          <ul class="menu">
+          
+            
+            
+            <li class="menu-item">
+              
+              
+<a class="" href="/">
+  
+  Home
+  
+</a>
+
+              
+            </li>
+          
+            
+            
+            <li class="menu-item">
+              
+              
+<a class="" href="/docs">
+  
+  Docs
+  
+</a>
+
+              
+            </li>
+          
+            
+            
+            <li class="menu-item">
+              
+              
+<a class="" href="/blog">
+  
+  Blog
+  
+</a>
+
+              
+            </li>
+          
+            
+            
+            <li class="menu-item menu-button">
+              
+              
+<a class="button" href="/#buy">
+  
+  Buy
+  
+</a>
+
+              
+            </li>
+          
+          </ul>
+        </div><!-- .site-nav-inside -->
+      </nav><!-- .site-navigation -->
+      <button id="menu-open" class="menu-toggle"><span class="screen-reader-text">Close Menu</span><span class="icon-menu" aria-hidden="true"></span></button>
+      
+    </div><!-- .site-header-inside -->
+  </div><!-- .inner -->
+</header><!-- .site-header -->
+
+  <main id="content" class="site-content">
+      <article class="post post-full">
+    <header class="post-header has-gradient outer">
+      
+      
+      <div class="bg-img" style="background-image: url('/images/pixel_nyan.png')"></div>
+      
+      <div class="inner-sm">
+        <div class="post-meta">
+          <time class="published" datetime="2021-03-08 00:00">March 08, 2021</time>
+        </div>
+        <h1 class="post-title">WebSerial - The next big thing for badges and devboards?</h1>
+        
+        
+      </div>
+    </header>
+    <div class="inner-md outer">
+      <div class="post-content">
+        <p>Post by Tom Clement</p>
+
+<p><img src="/images/pixel_nyan.png" alt="Full colour art on the Pixel Badge" /></p>
+
+<p>On March 2nd, the Chrome browser dev team made WebSerial available to the large public in Chrome release 89. In this post, we’ll talk about how this new API opens up a whole new dimension for interfacing with not only <a href="https://twitter.com/search?q=badgelife" target="_blank">#badgelife</a> event badges like the <a href="/" target="_blank">Pixel Badge</a>, and also many other devices that use serial over USB.</p>
+
+<hr />
+
+<h2 id="the-legacy-way-of-using-badges--devboards">The legacy way of using badges / devboards</h2>
+
+<p>For the past years, most badges have been accessible via serial. You connected them to your computer via USB, and fired up a serial program like screen, minicom, or PuTTY. Many would present e.g. a micropython shell over this serial connection. In 2017, <a href="https://bodge.team/team/" target="_blank">badge.team</a> upped the game with a neat visual serial menu. Initially made for the SHA2017 hacker event badge, their firmware platform now runs on many badges, including the Pixel Badge.</p>
+
+<p>The visual menu helped make things like configuring WiFi easier for users, but required know-how of how to set up the serial connection:</p>
+
+<p><img src="/images/webserial/serial.png" alt="Previously, one would connect to badges via a serial terminal" /></p>
+
+<h2 id="how-webusb-broke-new-ground">How WebUSB broke new ground</h2>
+<p>In early 2020, Matthew Wilkes of <a href="https://www.emfcamp.org/" target="_blank">EMF</a>’s badge team <a href="https://github.com/MatthewWilkes/tide" target="_blank">made an IDE</a> that runs completely in your browser, and connects to badges via the recent <a href="https://web.dev/usb/" target="_blank">WebUSB</a> API. This was huge, as it made it much easier for people to get started with electronics. In the <a href="https://hackaday.com/2020/07/31/campzone-2020-badge-literally-speaks-to-us/" target="_blank">CampZone 2020 event badge</a>, we added to this idea with screens for installing and configuring apps and things like setting up WiFi:</p>
+
+<p><img src="/images/webserial/cz20_apps.png" alt="CampZone 2020 added app installation and config from your browser" /></p>
+
+<p>WebUSB is amazing, but it has one big downside: it can’t be used to communicate with USB serial devices, as it <a href="https://stackoverflow.com/a/54449381" target="_blank">only allows talking to unclaimed devices</a> and most operating systems automatically load drivers for the USB serial adapters that you find on all badges and other devboards.</p>
+
+<p>Some recent badges like CampZone2020 get around this issue by swapping out a normal USB serial chip for a general purpose microcontroller like the STM32F103, and have it act like a USB device that works like a serial adapter but does not get recognised as one. This prevents the OS from loading a generic driver for it, thus allowing you to use it in WebUSB. That’s fine for new devices that can afford the more expensive STM32, but doesn’t help for older devices.</p>
+
+<p><br /></p>
+
+<h2 id="webserial-changes-the-game-for-all-existing-devices">WebSerial changes the game for all existing devices</h2>
+<p>Enter <a href="https://web.dev/serial/" target="_blank">WebSerial</a>: a brand new API meant specifically for communicating with USB serial adapters.</p>
+
+<p>WebSerial can be used much like the WebUSB for rich badge interfaces in your browser. However, as it does not need special-purpose hardware, and rather works with any USB serial adapter, it gives us a wonderful gift: retroactive backwards compatibility with <em>any badge ever made</em>. Whoa.</p>
+
+<p>It works much like WebUSB - a webpage can request access to a device, and you have to expressly grant permission:</p>
+
+<p><img src="/images/webserial/webserial_permission.png" alt="WebSerial requires manual permission to access devices" /></p>
+
+<p>Some groups have already started to use WebSerial in their projects. <a href="https://www.espruino.com/ide/" target="_blank">Espruino IDE</a> can now use the new API to run code on their microcontrollers, for example.</p>
+
+<p>For our part, we ported the WebUSB-based web app we made for CampZone2020 to WebSerial, bringing easy visual installation of apps, drag &amp; drop file management, web IDE for programming, and a web python terminal to all badges that run badge.team firmware. That’s support for SHA2017, CampZone2019, Disobey2019, HackerHotel2019, CampZone2020, Disobey2020, and the Pixel Badge. How cool is that!</p>
+
+<p>If you have one of these devices, you can check out our WebSerial demo at <a href="https://webserial.curious.supplies" target="_blank">webserial.curious.supplies</a>. Or check out this demo video below:</p>
+
+<iframe src="https://player.vimeo.com/video/520706554" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen=""></iframe>
+
+<p><br /></p>
+
+<h2 id="whats-next">What’s next?</h2>
+
+<p>We hope that more people will start to incorporate WebSerial into their projects; we’d be absolutely thrilled to see it become easier for new people to get introduced to electronics. For new and existing badges out there, it no doubt makes a lot of sense to build web interfaces, but perhaps we should dream even bigger and get all other micropython and circuitpython devices on board too!</p>
+
+<p>Next up for us is flashing badges through the browser, too. Luckily, <a href="https://github.com/makermelissa" target="_blank">makermelissa</a> and Adafruit have already made <a href="https://github.com/adafruit/Adafruit_WebSerial_ESPTool" target="_blank">an initial port of esptool in JS</a>, paving the way for the easiest flashing procedure for badge-owners thus far.</p>
+
+<p>Do you want to know more, or would you like our help bringing WebSerial into your project? Feel free to reach out <a href="/docs/community" target="_blank">on our Discord</a> or via info@curious.supplies.</p>
+
+<p><br /></p>
+
+<hr />
+
+<p><br /></p>
+
+<p>Psst, if you’re still looking for something to do during these crazy times and like WiFi-enabled LEDs you can program in Python: you can still get one of the few remaining <a href="/" target="_blank">Pixel Badge Founder’s Edition here</a>.</p>
+<iframe src="https://player.vimeo.com/video/489924539" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen=""></iframe>
+
+      </div><!-- .post-content -->
+    </div><!-- .inner-md -->
+  </article><!-- .post -->
+
+  <!-- Next/previous post navigation TBD -->
+  <!--
+  <div class="inner-md outer">
+    <nav class="read-next">
+      <h2 class="read-next-title line-left">Read Next</h2>
+      <div class="nav-links">
+        <article class="post">
+          <div class="post-meta">
+            <time class="published" datetime="">Previous post date</time>
+          </div>
+          <h3 class="post-title"><a href="#" rel="bookmark">Previous Post Title</a></h3>
+        </article>
+        <article class="post">
+          <div class="post-meta">
+            <time class="published" datetime="">Next post date</time>
+          </div>
+          <h3 class="post-title"><a href="#" rel="bookmark">Next Post Title</a></h3>
+        </article>
+      </div>
+    </nav>
+  </div>
+  -->
+
+  </main><!-- .site-content -->
+  <footer id="colophon" class="site-footer outer">
+  <div class="inner">
+    <div class="site-footer-inside">
+      <p class="site-info">
+        
+        
+        <span class="copyright">Curious Supplies by Tom Clement</span>
+        
+        
+          
+          
+<a class="" href="https://www.stackbit.com" target="_blank" rel="noopener">
+  
+  Made with Stackbit
+  
+</a>
+
+        
+      </p><!-- .site-info -->
+      
+      
+      <div class="social-links">
+        
+          
+          
+<a class="button button-icon" href="https://twitter.com/Tom_Clement" target="_blank" rel="noopener">
+  
+  <span class="icon fab fa-twitter" aria-hidden="true"></span><span class="screen-reader-text">Twitter</span>
+  
+</a>
+
+        
+          
+          
+<a class="button button-icon" href="https://github.com/tjclement" target="_blank" rel="noopener">
+  
+  <span class="icon fab fa-github" aria-hidden="true"></span><span class="screen-reader-text">GitHub</span>
+  
+</a>
+
+        
+      </div><!-- .social-links -->
+      
+    </div><!-- .site-footer-inside -->
+  </div><!-- .inner -->
+  <!-- Privacy-first analytics, without cookies, multi-session tracking, and other evil nonsense -->
+<script async defer data-domain="pixel.curious.supplies" src="https://plausible.io/js/plausible.js"></script>
+</footer><!-- .site-footer -->
+
+</div><!-- .site -->
+
+        <!-- Scripts -->
+        <script src="/assets/js/plugins.js"></script>
+        <script src="/assets/js/main.js"></script>
+        <script src="/assets/js/page-load.js"></script>
+    </body> 
+</html>

@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="en">
+    <head>    
+        <title>A new tool in PCB design? How we made full colour PCB art - Pixel Badge ESP32 LED devboard</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="This post describes our initial ideas, the common pitfalls, and finally a working way of adding full colour PCB art to electronics projects."/>
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i%26display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="/assets/css/main.css">
+
+        <meta property="og:title" content="A new tool in PCB design? How we made full colour PCB art - Pixel Badge ESP32 LED devboard" />
+        <meta property="og:type" content="website" />
+        <meta name="twitter:title" content="A new tool in PCB design? How we made full colour PCB art - Pixel Badge ESP32 LED devboard" />
+        
+        
+        <meta property="og:image" content="https://pixel.curious.supplies/images/pixel_badge_back.png"/>
+        <meta name="twitter:image" content="https://pixel.curious.supplies/images/pixel_badge_back.png"/>
+        <meta name="twitter:card" content="summary_large_image" />
+        
+    </head>
+    <body>
+        
+        <div id="page" class="site">
+  <header id="masthead" class="site-header outer">
+  <div class="inner">
+    <div class="site-header-inside">
+      <div class="site-branding">
+        
+        
+        <p class="site-title"><a href="/">Pixel Badge</a></p>
+        
+      </div><!-- .site-branding -->
+      
+      
+      <nav id="main-navigation" class="site-navigation" aria-label="Main Navigation">
+        <div class="site-nav-inside">
+          <button id="menu-close" class="menu-toggle"><span class="screen-reader-text">Open Menu</span><span class="icon-close" aria-hidden="true"></span></button>
+          <ul class="menu">
+          
+            
+            
+            <li class="menu-item">
+              
+              
+<a class="" href="/">
+  
+  Home
+  
+</a>
+
+              
+            </li>
+          
+            
+            
+            <li class="menu-item">
+              
+              
+<a class="" href="/docs">
+  
+  Docs
+  
+</a>
+
+              
+            </li>
+          
+            
+            
+            <li class="menu-item">
+              
+              
+<a class="" href="/blog">
+  
+  Blog
+  
+</a>
+
+              
+            </li>
+          
+            
+            
+            <li class="menu-item menu-button">
+              
+              
+<a class="button" href="/#buy">
+  
+  Buy
+  
+</a>
+
+              
+            </li>
+          
+          </ul>
+        </div><!-- .site-nav-inside -->
+      </nav><!-- .site-navigation -->
+      <button id="menu-open" class="menu-toggle"><span class="screen-reader-text">Close Menu</span><span class="icon-menu" aria-hidden="true"></span></button>
+      
+    </div><!-- .site-header-inside -->
+  </div><!-- .inner -->
+</header><!-- .site-header -->
+
+  <main id="content" class="site-content">
+      <article class="post post-full">
+    <header class="post-header has-gradient outer">
+      
+      
+      <div class="bg-img" style="background-image: url('/images/pixel_badge_back.png')"></div>
+      
+      <div class="inner-sm">
+        <div class="post-meta">
+          <time class="published" datetime="2020-12-12 00:00">December 12, 2020</time>
+        </div>
+        <h1 class="post-title">A new tool in PCB design? How we made full colour PCB art</h1>
+        
+        
+      </div>
+    </header>
+    <div class="inner-md outer">
+      <div class="post-content">
+        <p>Post by Tom Clement</p>
+
+<p><img src="/images/pixel_badge_back.png" alt="Full colour art on the Pixel Badge" /></p>
+
+<p>Beautiful PCB design has thrived in the past few years. With personal projects and event badges alike, hackers have been pushing the limits of the artistic beauty they can put in their circuit boards.</p>
+
+<p>The community of PCB enthusiasts has experimented with combining colours of silkscreen, copper or ENIG, and solder mask to <a href="https://hackaday.com/2017/03/22/making-more-of-me-money/" target="_blank">make sweet graphics</a>. They’ve convinced PCB houses to <a href="https://hackaday.io/project/18508-mr-robot-badge/log/64526-how-i-created-the-mr-robot-badge" target="_blank">use multiple layers of silkscreen</a>, have <a href="https://hackaday.com/2019/05/30/hackaday-superconference-pushing-the-boundaries-of-pcb-artwork-with-brian-benchoff/" target="_blank">stamped colours of their own</a>, and have even <a href="https://hackaday.com/2020/01/13/the-way-of-the-pcb-artist-how-to-make-truly-beautiful-circuit-boards/" target="_blank">gone multidimensional</a>.</p>
+
+<p>I got hooked on event badges after falling in love with <a href="https://hackaday.com/2017/08/14/hands-on-with-the-shacamp-2017-badge/" target="_blank">SHA2017</a>, and have been involved in making badges for a bunch of events ever since. For every new badge we make, we have some innate drive to push the boundary a bit further to what was already done before, both in hardware and what experience it gives its users, and in the aesthetics of the badge.</p>
+
+<p>So naturally, when people asked for the re-production of the ESP32 WiFi LED panel badge a bunch of us had made for CampZone 2019 <a href="https://hackaday.com/2019/07/25/campzone-2019-badge-is-begging-to-become-a-huge-billboard/" target="_blank">that had inkjet printed dithered single-colour graphics</a>, I started thinking about what’s next. Stumbling upon a <a href="https://news.ycombinator.com/item?id=20464215" target="_blank">hacker news post</a> that showed full-colour UV inkjet printed PCBs by an Australian company called <a href="https://www.littlebird.com.au/" target="_blank">Little Bird</a>, I was amazed. Even though the limitations of PCB design had previously resulted in super creative art, having full-colour graphics in your toolbox could open up so many more possibilities.</p>
+
+<p>The comments section of the hacker news article showed that apparently UV printing had already been done on PCBs over a decade ago, but I hadn’t seen anyone in the badge scene use it before. So I got cracking with our (amazing!) production partner Norbert of <a href="https://shop.allnetchina.cn" target="_blank">ALLNET China</a>, and together we started experimenting with printing on our PCBs. Boy, were we in for a ride! In the remainder of this post, I’ll try to summarise all of the things we learned along the way.</p>
+
+<hr />
+
+<h2 id="first-attempts">First attempts</h2>
+<p>We first started thinking about getting to full colour prints by using the same dithering technique we had used for CampZone 2019, but now with many colours, because I had no idea how normal UV printing worked. Luckily, my friend Hans (aka “the maker maker”, whom I got to know via Ian of <a href="http://dangerousprototypes.com" target="_blank">Dangerous Prototypes</a>) mentioned that industrial UV printers can print on many materials out of the box, including PCBs.</p>
+
+<p>Indeed, after getting some weird looks from a company that normally makes physical store signs with their UV printers, they were happy to put some of our old unpopulated CampZone 2019 PCBs in their printer and turn them into retrowave heaven:</p>
+
+<p><img src="/images/pcbart/1st_try.jpeg" alt="Full colour art printed over scrap CZ19 badges" /></p>
+
+<p>This initial print used standard CMYK UV ink, plus a separate white UV ink for the whites.</p>
+
+<p>The result looked great, but we hit the same problem others before us had hit: putting printed PCBs in a reflow oven messes with the colours a lot. You might remark that it makes more sense to print on the PCBs after they have been pick&amp;placed and soldered. However, the print accuracy of inkjet printers is a function of the distance between the print jet and the object. Our printer could only move 3mm above the PCB (which was not enough for our components), and even if it could move higher the print quality would be quite bad. So instead we worked on getting the UV ink handle reflowing better.</p>
+
+<h2 id="lesson-1-making-white-stay-white">Lesson 1: making white stay white</h2>
+
+<p>After reflowing, the boards looked like this:</p>
+
+<p><img src="/images/pcbart/1st_try_baked.png" alt="UV printed boards with white ink after reflowing" /></p>
+
+<p>You’ll notice that all colours become a bit more dim. Red seems to lose more of its edge than green and blue. Most importantly though, the white ink is turned into a nasty aged yellow. Most of the colour changes we could live with, so we didn’t correct for them in our designs (you’ll see later that our final art worked nicely with the reflow process). In general one can try to correct for the changes in their source design, of course.</p>
+
+<p>The whites were totally unacceptable though. It made the badge look old and yucky. We considered diving into the world of different UV inks, and finding a white ink that was more heat tolerant. Then we had a simple realisation: the perfect heat resistant white ink we all know already was simply white soldermask or silkscreen. Because we want to keep the front of the badge black to keep nice contrast, we opted for keeping the mask black and experimented with white silkscreen on the back.</p>
+
+<p>So we modified our art such that the white parts were cut out of the design, which meant no ink would be placed there, and made PCBs that were completely covered with white silk outside of the component pads. The result was awesome, even after reflowing:</p>
+
+<p><img src="/images/pcbart/2nd_try_white.jpg" alt="UV ink on white silkscreen after reflowing" /></p>
+
+<h2 id="lesson-2-getting-decent-alignment">Lesson 2: getting decent alignment</h2>
+
+<p>At this point we had PCBs that looked nice, but were in no way usable to solder on: many pads were partially printed over.</p>
+
+<p><img src="/images/pcbart/alignment_pads.jpg" alt="Pads were being partially printed over" /></p>
+
+<p>We were printing entire panels at a time, and observed that even when we got perfect alignment on one panel, the next would be wildly out of spec again.</p>
+
+<p><img src="/images/pcbart/alignment_panel.jpg" alt="Printing whole panels at a time" /></p>
+
+<p>It turned out that even though the <em>contents</em> of a panel are extremely dimensionally accurate, the <em>edge rails</em> width was not. PCB houses use alignment holes and markers on the edge rails to align their processes, and don’t need to care if there was ~0.2mm extra width on the rails after such a mark or not.</p>
+
+<p><img src="/images/pcbart/alignment_rails.jpg" alt="PCB edge rails are not necessarily uniformly cut" /></p>
+
+<p>Aside from this, it is in general hard to get sub-mm accuracy on big industrial UV inkjet printers. For future projects, we will at least try to get better repeatability between panels by making a (very thin) jig that is a bit wider and taller than a panel, that has pins on which we slide the alignment holes of the panel. This allows you to fasten the jig to the printbed, and assure that <em>once you have tediously aligned the jig</em> the future panels will print reasonably well.</p>
+
+<h2 id="lesson-3-more-pin-margin--more-better">Lesson 3: more pin margin == more better</h2>
+
+<p>The alignment issue of the previous section was enlarged because we were stubborn. We felt that having close to no whitespace around pads (0.1mm) would look so much better, so literally any misalignment would immediately cause pads to be partially overprinted. It does look incredible in our opinion, but was the cause for a lot of blood, sweat, and tears. We struggled to get our failure rates below 50% (which is ridiculously high; normally we would want &lt;1%).</p>
+
+<p>This makes the <a href="/" target="_blank">Founder’s Edition</a> extra special, as it is highly likely our last project that will have this insanely tight printing margin!
+<img src="/images/pixel_badge_back.png" alt="Full colour art on the Pixel Badge" /></p>
+
+<p>For future projects, we will probably use a ~1mm margin around pins to make our life easier. For making this margin less apparent, we’ll likely incorporate the underlying mask or silk colour in the design. That way you’re not looking at chunks of white across the board :)</p>
+
+<h2 id="so-what-now">So what now?</h2>
+
+<p>By sharing what we did, we hope to make you all excited about getting full-colour art on your designs. We’d be super psyched especially to see the <a href="https://twitter.com/search?q=badgelife" target="_blank">#badgelife</a> community pick up this neat trick for other event badges.</p>
+
+<p><br /></p>
+
+<p>And, if you’re still looking for something to do this Christmas and like WiFi-enabled LEDs you can program in Python: you can still get one of our <a href="/" target="_blank">Pixel Badges here</a>. Happy holidays!</p>
+<iframe src="https://player.vimeo.com/video/490463591" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen=""></iframe>
+
+<p><br /></p>
+
+<hr />
+
+<p><br /></p>
+
+<p>Do you want to know more, or would you like our help bringing UV inkjet printing into your project? Feel free to reach out <a href="/docs/community" target="_blank">on our Discord</a> or via info@curious.supplies.</p>
+
+      </div><!-- .post-content -->
+    </div><!-- .inner-md -->
+  </article><!-- .post -->
+
+  <!-- Next/previous post navigation TBD -->
+  <!--
+  <div class="inner-md outer">
+    <nav class="read-next">
+      <h2 class="read-next-title line-left">Read Next</h2>
+      <div class="nav-links">
+        <article class="post">
+          <div class="post-meta">
+            <time class="published" datetime="">Previous post date</time>
+          </div>
+          <h3 class="post-title"><a href="#" rel="bookmark">Previous Post Title</a></h3>
+        </article>
+        <article class="post">
+          <div class="post-meta">
+            <time class="published" datetime="">Next post date</time>
+          </div>
+          <h3 class="post-title"><a href="#" rel="bookmark">Next Post Title</a></h3>
+        </article>
+      </div>
+    </nav>
+  </div>
+  -->
+
+  </main><!-- .site-content -->
+  <footer id="colophon" class="site-footer outer">
+  <div class="inner">
+    <div class="site-footer-inside">
+      <p class="site-info">
+        
+        
+        <span class="copyright">Curious Supplies by Tom Clement</span>
+        
+        
+          
+          
+<a class="" href="https://www.stackbit.com" target="_blank" rel="noopener">
+  
+  Made with Stackbit
+  
+</a>
+
+        
+      </p><!-- .site-info -->
+      
+      
+      <div class="social-links">
+        
+          
+          
+<a class="button button-icon" href="https://twitter.com/Tom_Clement" target="_blank" rel="noopener">
+  
+  <span class="icon fab fa-twitter" aria-hidden="true"></span><span class="screen-reader-text">Twitter</span>
+  
+</a>
+
+        
+          
+          
+<a class="button button-icon" href="https://github.com/tjclement" target="_blank" rel="noopener">
+  
+  <span class="icon fab fa-github" aria-hidden="true"></span><span class="screen-reader-text">GitHub</span>
+  
+</a>
+
+        
+      </div><!-- .social-links -->
+      
+    </div><!-- .site-footer-inside -->
+  </div><!-- .inner -->
+  <!-- Privacy-first analytics, without cookies, multi-session tracking, and other evil nonsense -->
+<script async defer data-domain="pixel.curious.supplies" src="https://plausible.io/js/plausible.js"></script>
+</footer><!-- .site-footer -->
+
+</div><!-- .site -->
+
+        <!-- Scripts -->
+        <script src="/assets/js/plugins.js"></script>
+        <script src="/assets/js/main.js"></script>
+        <script src="/assets/js/page-load.js"></script>
+    </body> 
+</html>

@@ -19,7 +19,7 @@ On March 2nd, the Chrome browser dev team made WebSerial available to the large 
 
 For the past years, most badges have been accessible via serial. You connected them to your computer via USB, and fired up a serial program like screen, minicom, or PuTTY. Many would present e.g. a micropython shell over this serial connection. In 2017, [badge.team](https://bodge.team/team/){:target="_blank"} (of which we are part) upped the game with a neat visual serial menu. Initially made for the SHA2017 hacker event badge, their firmware platform now runs on many badges, including the Pixel Badge.
 
-The visual menu helped make things like configuring WiFi easier for users, but required how-how of how to set up the serial connection:
+The visual menu helped make things like configuring WiFi easier for users, but required know-how of how to set up the serial connection:
 
 ![Previously, one would connect to badges via a serial terminal](/images/webserial/serial.png) 
  

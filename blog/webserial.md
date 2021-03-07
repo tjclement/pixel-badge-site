@@ -15,7 +15,7 @@ On March 2nd, the Chrome browser dev team made WebSerial available to the large 
 
 ***
 
-## The legacy way of using badges and devboard
+## The legacy way of using badges and devboards
 
 For the past years, most badges have been accessible via serial. You connected them to your computer via USB, and fired up a serial program like screen, minicom, or PuTTY. Many would present e.g. a micropython shell over this serial connection. In 2017, [badge.team](https://bodge.team/team/){:target="_blank"} (of which we are part) upped the game with a neat visual serial menu. Initially made for the SHA2017 hacker event badge, their firmware platform now runs on many badges, including the Pixel Badge.
 

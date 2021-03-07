@@ -48,7 +48,7 @@ Some groups have already started to use WebSerial in their projects. [Espruino I
 
 For our part, we ported the WebUSB-based web app we made for CampZone2020 to WebSerial, bringing easy visual installation of apps, drag & drop file management, web IDE for programming, and a web python terminal to all badges that run badge.team firmware. That's support for SHA2017, CampZone2019, Disobey2019, HackerHotel2019, CampZone2020, Disobey2020, and the Pixel Badge. How cool is that!
 
-If you have one of these devices, you can check out our WebSerial demo at [webserial.curious.supplies](https://webserial.curious.supplies){:target="_blank"}.
+If you have one of these devices, you can check out our WebSerial demo at [webserial.curious.supplies](https://webserial.curious.supplies){:target="_blank"}. Or check out this demo video below:
 
 <iframe src="https://player.vimeo.com/video/520706554" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 

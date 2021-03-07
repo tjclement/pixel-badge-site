@@ -36,7 +36,7 @@ Some recent badges like CampZone2020 get around this issue by swapping out a nor
 <br>
 
 ## WebSerial changes the game for all existing devices
-Enter [WebSerial](https://web.dev/serial/){:target="_blank"}: a brand new API meant specifically for communicating with USB uart adapters. 
+Enter [WebSerial](https://web.dev/serial/){:target="_blank"}: a brand new API meant specifically for communicating with USB serial adapters. 
 
 WebSerial can be used much like the WebUSB for rich badge interfaces in your browser. However, as it does not need special-purpose hardware, and rather works with any USB serial adapter, it gives us a wonderful gift: retroactive backwards compatibility with _any badge ever made_. Whoa.
 

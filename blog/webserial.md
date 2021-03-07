@@ -57,9 +57,15 @@ If you have one of these devices, you can check out our WebSerial demo at [webse
 
 We hope that more people will start to incorporate WebSerial into their projects; we'd be absolutely thrilled to see it become easier for new people to get introduced to electronics. For new and existing badges out there, it no doubt makes a lot of sense to build web interfaces, but perhaps we should dream even bigger and get all other micropython and circuitpython devices on board too!
 
+Next up for us is flashing badges through the browser, too. Luckily, [makermelissa](https://github.com/makermelissa){:target="_blank"} and Adafruit have already made [an initial port of esptool in JS](https://github.com/adafruit/Adafruit_WebSerial_ESPTool){:target="_blank"}, paving the way for the easiest flashing procedure for badge-owners thus far.
+
 <br>
 
-And, if you're still looking for something to do during these crazy times and like WiFi-enabled LEDs you can program in Python: you can still get one of the few remaining [Pixel Badge Founder's Edition here](/){:target="_blank"}.
+***
+
+<br>
+
+Psst, if you're still looking for something to do during these crazy times and like WiFi-enabled LEDs you can program in Python: you can still get one of the few remaining [Pixel Badge Founder's Edition here](/){:target="_blank"}.
 <iframe src="https://player.vimeo.com/video/489924539" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 
 <br>

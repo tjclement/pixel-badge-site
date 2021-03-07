@@ -15,7 +15,7 @@ On March 2nd, the Chrome browser dev team made WebSerial available to the large 
 
 ***
 
-## The legacy way of using badges and devboards
+## The legacy way of using badges / devboards
 
 For the past years, most badges have been accessible via serial. You connected them to your computer via USB, and fired up a serial program like screen, minicom, or PuTTY. Many would present e.g. a micropython shell over this serial connection. In 2017, [badge.team](https://bodge.team/team/){:target="_blank"} upped the game with a neat visual serial menu. Initially made for the SHA2017 hacker event badge, their firmware platform now runs on many badges, including the Pixel Badge.
 
@@ -52,12 +52,16 @@ If you have one of these devices, you can check out our WebSerial demo at [webse
 
 <iframe src="https://player.vimeo.com/video/520706554" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 
+<br>
 
 ## What's next?
 
 We hope that more people will start to incorporate WebSerial into their projects; we'd be absolutely thrilled to see it become easier for new people to get introduced to electronics. For new and existing badges out there, it no doubt makes a lot of sense to build web interfaces, but perhaps we should dream even bigger and get all other micropython and circuitpython devices on board too!
 
 Next up for us is flashing badges through the browser, too. Luckily, [makermelissa](https://github.com/makermelissa){:target="_blank"} and Adafruit have already made [an initial port of esptool in JS](https://github.com/adafruit/Adafruit_WebSerial_ESPTool){:target="_blank"}, paving the way for the easiest flashing procedure for badge-owners thus far.
+
+
+Do you want to know more, or would you like our help bringing WebSerial into your project? Feel free to reach out [on our Discord](/docs/community){:target="_blank"} or via info@curious.supplies.
 
 <br>
 
@@ -67,11 +71,3 @@ Next up for us is flashing badges through the browser, too. Luckily, [makermelis
 
 Psst, if you're still looking for something to do during these crazy times and like WiFi-enabled LEDs you can program in Python: you can still get one of the few remaining [Pixel Badge Founder's Edition here](/){:target="_blank"}.
 <iframe src="https://player.vimeo.com/video/489924539" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-
-<br>
-
-***
-
-<br>
-
-Do you want to know more, or would you like our help bringing WebSerial into your project? Feel free to reach out [on our Discord](/docs/community){:target="_blank"} or via info@curious.supplies.

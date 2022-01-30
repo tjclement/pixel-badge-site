@@ -22,7 +22,7 @@ Note: for historic reasons the parameter names mentioned here are not identical 
 | update    | period, callback | Updates the function callback to be executed every `period` ms. |
 
 
-## Examples
+## Example
 
 ### Updating the screen every X ms
 ```python

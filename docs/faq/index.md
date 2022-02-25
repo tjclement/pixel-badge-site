@@ -6,6 +6,10 @@ excerpt: >-
 layout: docs
 ---
 
+## OTA firmware update is failing
+
+If you are unable to update your Pixel firmware over the air ("the firmware doesn't fit in the ota partition" error), try using the [experimental web serial updater](https://badgeteam.github.io/web-updates/). Several people have reported that first erasing, then flashing the new firmware solved the problem.
+
 ## Do I need an 18650 li-ion battery to use the Pixel?
 
 No, the Pixel is perfectly happy being powered only by its USB C port. You can insert a battery if you want to walk around with the Pixel. We find it's great fun to wear it at (virtual, during the pandemic) conferences.

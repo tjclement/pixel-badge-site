@@ -1,0 +1,508 @@
+<!doctype html>
+<html lang="en">
+    <head>    
+        <title>Sndmixer - Pixel Badge ESP32 LED devboard</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="The main site for Curious Supplies' Pixel Badge ESP32 WiFi-enabled LED devboard"/>
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i%26display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="/assets/css/main.css">
+
+        <meta property="og:title" content="Sndmixer - Pixel Badge ESP32 LED devboard" />
+        <meta property="og:type" content="website" />
+        <meta name="twitter:title" content="Sndmixer - Pixel Badge ESP32 LED devboard" />
+        
+        
+        <meta name="twitter:card" content="summary" />
+        
+    </head>
+    <body>
+        
+        <div id="page" class="site">
+  <header id="masthead" class="site-header outer">
+  <div class="inner">
+    <div class="site-header-inside">
+      <div class="site-branding">
+        
+        
+        <p class="site-title"><a href="/">Pixel Badge</a></p>
+        
+      </div><!-- .site-branding -->
+      
+      
+      <nav id="main-navigation" class="site-navigation" aria-label="Main Navigation">
+        <div class="site-nav-inside">
+          <button id="menu-close" class="menu-toggle"><span class="screen-reader-text">Open Menu</span><span class="icon-close" aria-hidden="true"></span></button>
+          <ul class="menu">
+          
+            
+            
+            <li class="menu-item">
+              
+              
+<a class="" href="/">
+  
+  Home
+  
+</a>
+
+              
+            </li>
+          
+            
+            
+            <li class="menu-item">
+              
+              
+<a class="" href="/docs">
+  
+  Docs
+  
+</a>
+
+              
+            </li>
+          
+            
+            
+            <li class="menu-item">
+              
+              
+<a class="" href="/blog">
+  
+  Blog
+  
+</a>
+
+              
+            </li>
+          
+            
+            
+            <li class="menu-item menu-button">
+              
+              
+<a class="button" href="/#buy">
+  
+  Buy
+  
+</a>
+
+              
+            </li>
+          
+          </ul>
+        </div><!-- .site-nav-inside -->
+      </nav><!-- .site-navigation -->
+      <button id="menu-open" class="menu-toggle"><span class="screen-reader-text">Close Menu</span><span class="icon-menu" aria-hidden="true"></span></button>
+      
+    </div><!-- .site-header-inside -->
+  </div><!-- .inner -->
+</header><!-- .site-header -->
+
+  <main id="content" class="site-content">
+    <div class="inner outer">
+  <div class="docs-content">
+    
+    
+
+
+
+
+<nav id="docs-nav" class="docs-nav">
+  <div id="docs-nav-inside" class="docs-nav-inside sticky">
+    <button id="docs-nav-toggle" class="docs-nav-toggle">Navigate Docs<span class="icon-angle-right" aria-hidden="true"></span></button>
+    <div class="docs-nav-menu">
+      <ul id="docs-menu" class="docs-menu">
+        <li class="docs-menu-item">
+          <a href="/docs/">Welcome</a>
+        </li>
+        
+          
+          
+          
+          
+          
+          
+          
+          <li class="docs-menu-item has-children">
+            <a href="/docs/getting-started/">Getting Started</a>
+            
+            
+              <button class="docs-submenu-toggle"><span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span></button>
+              
+              
+
+
+<ul class="docs-submenu">
+  
+    <li class="docs-menu-item">
+      <a href="/docs/getting-started/using/">Using your badge</a>
+    </li>
+  
+    <li class="docs-menu-item">
+      <a href="/docs/getting-started/connecting/">Connecting via USB</a>
+    </li>
+  
+    <li class="docs-menu-item">
+      <a href="/docs/getting-started/wifi/">Connecting to WiFi</a>
+    </li>
+  
+    <li class="docs-menu-item">
+      <a href="/docs/getting-started/install_apps/">Installing apps</a>
+    </li>
+  
+</ul>
+
+            
+          </li>
+        
+          
+          
+          
+          
+          
+          
+          
+          <li class="docs-menu-item has-children">
+            <a href="/docs/app-development/">App Development</a>
+            
+            
+              <button class="docs-submenu-toggle"><span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span></button>
+              
+              
+
+
+<ul class="docs-submenu">
+  
+    <li class="docs-menu-item">
+      <a href="/docs/app-development/writing/">Writing your own apps</a>
+    </li>
+  
+    <li class="docs-menu-item">
+      <a href="/docs/app-development/publishing/">Publishing your new app</a>
+    </li>
+  
+    <li class="docs-menu-item">
+      <a href="/docs/app-development/tips/">Tips for making great apps</a>
+    </li>
+  
+</ul>
+
+            
+          </li>
+        
+          
+          
+          
+          
+          
+          
+          
+          <li class="docs-menu-item has-children active">
+            <a href="/docs/api-reference/">API Reference</a>
+            
+            
+              <button class="docs-submenu-toggle"><span class="screen-reader-text">Submenu</span><span class="icon-angle-right" aria-hidden="true"></span></button>
+              
+              
+
+
+<ul class="docs-submenu">
+  
+    <li class="docs-menu-item">
+      <a href="/docs/api-reference/buttons/">Buttons</a>
+    </li>
+  
+    <li class="docs-menu-item">
+      <a href="/docs/api-reference/rgb/">RGB</a>
+    </li>
+  
+    <li class="docs-menu-item">
+      <a href="/docs/api-reference/uinterface/">uInterface</a>
+    </li>
+  
+    <li class="docs-menu-item">
+      <a href="/docs/api-reference/wifi/">WiFi</a>
+    </li>
+  
+    <li class="docs-menu-item">
+      <a href="/docs/api-reference/system/">System</a>
+    </li>
+  
+    <li class="docs-menu-item">
+      <a href="/docs/api-reference/appconfig/">Appconfig</a>
+    </li>
+  
+    <li class="docs-menu-item">
+      <a href="/docs/api-reference/valuestore/">Valuestore</a>
+    </li>
+  
+    <li class="docs-menu-item">
+      <a href="/docs/api-reference/audio/">Audio</a>
+    </li>
+  
+    <li class="docs-menu-item current">
+      <a href="/docs/api-reference/sndmixer/">Sndmixer</a>
+    </li>
+  
+    <li class="docs-menu-item">
+      <a href="/docs/api-reference/virtualtimers/">Virtualtimers</a>
+    </li>
+  
+    <li class="docs-menu-item">
+      <a href="/docs/api-reference/mpu6050/">MPU6050 Accelerometer</a>
+    </li>
+  
+    <li class="docs-menu-item">
+      <a href="/docs/api-reference/dumbstreamjson/">DumbstreamJSON</a>
+    </li>
+  
+    <li class="docs-menu-item">
+      <a href="/docs/api-reference/consts/">Consts</a>
+    </li>
+  
+    <li class="docs-menu-item">
+      <a href="/docs/api-reference/micropython/">Micropython modules</a>
+    </li>
+  
+</ul>
+
+            
+          </li>
+        
+          
+          
+          
+          
+          
+          
+          
+          <li class="docs-menu-item">
+            <a href="/docs/faq/">FAQ</a>
+            
+            
+          </li>
+        
+          
+          
+          
+          
+          
+          
+          
+          <li class="docs-menu-item">
+            <a href="/docs/community/">Where To Get Support</a>
+            
+            
+          </li>
+        
+      </ul><!-- .docs-menu -->
+    </div><!-- .docs-nav-menu -->
+  </div><!-- .docs-nav-inside -->
+</nav><!-- .docs-nav -->
+
+    <article class="post type-docs">
+      <div class="post-inside">
+        <header class="post-header">
+          <h1 class="post-title line-left">Sndmixer</h1>
+        </header><!-- .post-header -->
+        <div class="post-content">
+          <p>The <em>sndmixer</em> API is a low-level method of playing many different kinds of audio. For an easy to use wrapper around sndmixer, see <a href="../audio">audio</a>.</p>
+
+<h1 id="examples">Examples</h1>
+
+<h2 id="starting-the-audio-subsystem">Starting the audio subsystem</h2>
+<p>The sound-mixer task runs on the second CPU core of the ESP32 and is able to mix together multiple auto streams and feed them to the DAC of your device.</p>
+
+<p>The sound-mixer task needs to be started before any other audio related function can be used. Starting the sound-mixer task is done using the following API command:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>import sndmixer
+sndmixer.begin(&lt;number-of-channels&gt;, [enable-stereo])
+</code></pre></div></div>
+
+<p>Starting the sound-mixer with only one channel and with stereo enabled (<code class="highlighter-rouge">sndmixer.begin(1, True)</code>) results in the best audio quality but does not allow you to play multiple audiostreams at the same time. We recommend you start the sound-mixer task with an amount of channels you actually plan on using.</p>
+
+<p>Note: it is currently not possible to stop the sound-mixer task, change the number of channels or stereo mode without restarting your badge. We’re working on adding this functionality in the future.</p>
+
+<h2 id="playing-mp3-music">Playing MP3 music</h2>
+<p>MP3 files can be played by reading the MP3 compressed sample data from a bytearray buffer or by reading from a stream by means of the file-descriptor.</p>
+
+<p>Playing an MP3 file directly from a bytearray has the added benefit that you can play the MP3 file multiple times at the same time. This allows you to create basic soundboard effects where the same sample can be triggered while it is already playing.</p>
+
+<p>Playing an MP3 file from a stream (fd) allows for playing larger files without loading them fully into ram before playing, this is usefull for background music as longer MP3 files can be played easily. This method can also be used to play MP3 streams directly from the internet.</p>
+
+<h3 id="playing-an-mp3-file-using-the-bytearray-method">Playing an MP3 file using the bytearray method</h3>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code># Preparation: start the sound-mixer task
+import sndmixer
+sndmixer.begin(2, True)
+
+# First we load the MP3 file into memory
+with open("music.mp3", "rb") as fd:
+  mp3data = fd.read()
+
+# Then we play the mp3 file
+audioStreamId = sndmixer.mp3(mp3data)
+
+# Now that the stream is playing we can set the volume (0-255)
+sndmixer.volume(audioStreamId, 50)
+</code></pre></div></div>
+
+<h3 id="playing-an-mp3-file-using-the-stream-method">Playing an MP3 file using the stream method</h3>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code># Preparation: start the sound-mixer task
+import sndmixer
+sndmixer.begin(2, True)
+
+# First we create a file-descriptor pointing to the MP3 file
+mp3file = open("music.mp3", "rb")
+
+# Then we play the mp3 file by passing the file-descriptor to the sound-mixer task
+audioStreamId = sndmixer.mp3_stream(mp3file)
+
+# Now that the stream is playing we can set the volume (0-255)
+sndmixer.volume(audioStreamId, 50)
+</code></pre></div></div>
+
+<h3 id="playing-opus-encoded-data">Playing opus-encoded data</h3>
+<p>Playback of opus works the same as MP3. You just have to replace <code class="highlighter-rouge">mp3</code> with <code class="highlighter-rouge">opus</code>:</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>import sndmixer
+sndmixer.begin(2, True)
+sndmixer.opus_stream(open('snd.opus', 'rb'))
+</code></pre></div></div>
+
+<p>Opus data is expected to have frames formed like this: <code class="highlighter-rouge">u8: channels | u8:
+sampling_rate / 400 | u16: len | u8[len]: data</code>, where <code class="highlighter-rouge">data</code> is the actual
+opus-encoded data. This is the format produced by the <code class="highlighter-rouge">opus</code> module.</p>
+
+<h3 id="playing-tracker-music">Playing tracker music</h3>
+<p>The sound-mixer can play mod, s3m and other tracker music files (your mileage may vary).</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code># Preparation: start the sound-mixer task
+import sndmixer
+sndmixer.begin(2, True)
+
+# First we load the tracker music file into memory
+with open("music.s3m", "rb") as fd:
+  moddata = fd.read()
+
+# Then we play the tracker music file
+audioStreamId = sndmixer.mod(moddata)
+
+# Now that the stream is playing we can set the volume (0-255)
+sndmixer.volume(audioStreamId, 50)
+</code></pre></div></div>
+
+<h3 id="playing-wave-files">Playing wave files</h3>
+<p>This is ment for playing short sound effects or samples. You could even generate the samples using python if you wanted to!</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code># Preparation: start the sound-mixer task
+import sndmixer
+sndmixer.begin(2, True)
+
+# First we load the wave file into memory
+with open("music.wav", "rb") as fd:
+  wavdata = fd.read()
+
+# Then we play the wave file
+audioStreamId = sndmixer.wav(wavdata)
+
+# Now that the stream is playing we can set the volume (0-255)
+sndmixer.volume(audioStreamId, 50)
+</code></pre></div></div>
+
+<h3 id="synthesizer">Synthesizer</h3>
+<p>A (very) basic synthesizer is available as well. It currently generates sine, square and saw waves at a frequency and volume of your choosing. Each waveform generated uses one mixer channel.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code># Preparation: start the sound-mixer task
+import sndmixer
+sndmixer.begin(3, True)
+
+# Create the synthesizer channel
+synthId = sndmixer.synth()
+
+# Set the volume of the synthesizer channel
+sndmixer.volume(synthId, 50)
+
+# Set the frequency to 100Hz
+sndmixer.freq(synthId, 100)
+</code></pre></div></div>
+
+          
+          
+          
+            
+            
+            
+            
+            
+          
+        </div><!-- .post-content -->
+      </div><!-- .post-inside -->
+    </article><!-- .post -->
+    <nav id="page-nav" class="page-nav">
+      <div id="page-nav-inside" class="page-nav-inside sticky">
+        <h2 class="page-nav-title">Jump to Section</h2>
+        <div id="page-nav-link-container"></div>
+      </div><!-- .page-nav-inside -->
+    </nav><!-- .page-nav -->
+  </div><!-- .docs-content -->
+</div><!-- .inner-->
+
+  </main><!-- .site-content -->
+  <footer id="colophon" class="site-footer outer">
+  <div class="inner">
+    <div class="site-footer-inside">
+      <p class="site-info">
+        
+        
+        <span class="copyright">Curious Supplies by Tom Clement</span>
+        
+        
+          
+          
+<a class="" href="https://www.stackbit.com" target="_blank" rel="noopener">
+  
+  Made with Stackbit
+  
+</a>
+
+        
+      </p><!-- .site-info -->
+      
+      
+      <div class="social-links">
+        
+          
+          
+<a class="button button-icon" href="https://twitter.com/Tom_Clement" target="_blank" rel="noopener">
+  
+  <span class="icon fab fa-twitter" aria-hidden="true"></span><span class="screen-reader-text">Twitter</span>
+  
+</a>
+
+        
+          
+          
+<a class="button button-icon" href="https://github.com/tjclement" target="_blank" rel="noopener">
+  
+  <span class="icon fab fa-github" aria-hidden="true"></span><span class="screen-reader-text">GitHub</span>
+  
+</a>
+
+        
+      </div><!-- .social-links -->
+      
+    </div><!-- .site-footer-inside -->
+  </div><!-- .inner -->
+  <!-- Privacy-first analytics, without cookies, multi-session tracking, and other evil nonsense -->
+<script async defer data-domain="pixel.curious.supplies" src="https://plausible.io/js/plausible.js"></script>
+</footer><!-- .site-footer -->
+
+</div><!-- .site -->
+
+        <!-- Scripts -->
+        <script src="/assets/js/plugins.js"></script>
+        <script src="/assets/js/main.js"></script>
+        <script src="/assets/js/page-load.js"></script>
+    </body> 
+</html>

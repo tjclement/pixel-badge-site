@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en-US" class=" cygvzu idc0_325">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Pixel Badge: ESP32 WiFi LED board</title>
+
+    <meta name="ahrefs-site-verification" content="93b839839c145e9ff38c2ec44660cfa95778c48524497fc90328e97e04cb62b7">
+    <!-- This site is optimized with the Yoast SEO plugin v13.4.1 - https://yoast.com/wordpress/plugins/seo/ -->
+    <meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <link rel="canonical" href="https://pixel.curious.supplies/">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Pixel Badge: ESP32 WiFi LED board">
+    <meta property="og:description" content="256 beautiful RGB LEDs, Python-programmable, and a free app store with dozens of apps">
+    <meta property="og:url" content="https://pixel.curious.supplies/">
+    <meta property="og:site_name" content="Pixel Badge">
+    <meta property="og:image" content="https://pixel.curious.supplies/images/pixel_badge_back.png">
+    <meta property="og:image:secure_url"
+          content="https://pixel.curious.supplies/images/pixel_badge_back.png">
+    <meta property="og:image:width" content="2357">
+    <meta property="og:image:height" content="932">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Pixel Badge: ESP32 WiFi LED board">
+    <meta name="twitter:description" content="256 beautiful RGB LEDs, Python-programmable, and a free app store with dozens of apps">
+    <meta name="twitter:image" content="https://pixel.curious.supplies/images/pixel_badge_back.png">
+    <script type="application/ld+json" class="yoast-schema-graph yoast-schema-graph--main">{
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "WebSite",
+                "@id": "https://pixel.curious.supplies/#website",
+                "url": "https://pixel.curious.supplies/",
+                "name": "Pixel Badge",
+                "inLanguage": "en-US",
+                "description": "256 Full Colour Pixels at Your Command",
+                "potentialAction": [
+                    {
+                        "@type": "SearchAction",
+                        "target": "https://pixel.curious.supplies/?s={search_term_string}",
+                        "query-input": "required name=search_term_string"
+                    }
+                ]
+            },
+            {
+                "@type": "ImageObject",
+                "@id": "https://pixel.curious.supplies/#primaryimage",
+                "inLanguage": "en-US",
+                "url": "https://pixel.curious.supplies/images/pixel_badge_back.png",
+                "width": 2560,
+                "height": 1707
+            },
+            {
+                "@type": "WebPage",
+                "@id": "https://pixel.curious.supplies/#webpage",
+                "url": "https://pixel.curious.supplies/",
+                "name": "Pixel Badge: ESP32 WiFi LED board",
+                "isPartOf": {
+                    "@id": "https://pixel.curious.supplies/#website"
+                },
+                "inLanguage": "en-US",
+                "primaryImageOfPage": {
+                    "@id": "https://pixel.curious.supplies/#primaryimage"
+                },
+                "datePublished": "2020-04-05T19:00:39+00:00",
+                "dateModified": "2020-04-07T16:35:14+00:00",
+                "potentialAction": [
+                    {
+                        "@type": "ReadAction",
+                        "target": [
+                            "https://pixel.curious.supplies/"
+                        ]
+                    }
+                ]
+            }
+        ]
+    }</script>
+    <!-- / Yoast SEO plugin. -->
+
+    <link rel="dns-prefetch" href="https://ajax.googleapis.com/">
+    <link rel="dns-prefetch" href="https://s.w.org/">
+    <script src="./index_files/wp-emoji-release.min.js" type="text/javascript" defer=""></script>
+    <style type="text/css">
+        img.wp-smiley,
+        img.emoji {
+            display: inline !important;
+            border: none !important;
+            box-shadow: none !important;
+            height: 1em !important;
+            width: 1em !important;
+            margin: 0 .07em !important;
+            vertical-align: -0.1em !important;
+            background: none !important;
+            padding: 0 !important;
+        }
+    </style>
+    <link rel="stylesheet" id="wp-block-library-css" href="./index_files/style.min.css" type="text/css" media="all">
+    <style id="wp-block-library-inline-css" type="text/css">
+        .has-text-align-justify {
+            text-align: justify;
+        }
+    </style>
+    <link rel="stylesheet" id="style-css" href="./index_files/style.css" type="text/css" media="all">
+    <link rel="stylesheet" id="jetpack_css-css" href="./index_files/jetpack.css" type="text/css" media="all">
+    <script type="text/javascript" src="./index_files/jquery.min.js"></script>
+    <link rel="https://api.w.org/" href="./wp-json/">
+    <link rel="EditURI" type="application/rsd+xml" title="RSD" href="./xmlrpc.php?rsd">
+    <link rel="shortlink" href="./">
+
+    <link rel="dns-prefetch" href="https://c0.wp.com/">
+    <style type="text/css">img#wpstats {
+        display: none
+    }</style>
+
+    <!-- Privacy-first analytics, without cookies, multi-session tracking, and other evil nonsense -->
+    <script async defer data-domain="pixel.curious.supplies" src="https://plausible.io/js/plausible.js"></script>
+</head>
+
+<body class="home page-template-default page page-id-8">
+
+<!-- This DOM structure is valid for nav-type-1, 2, 3, 4, 5 & 6, EXCEPT for the "nav-spacer" (see bottom) -->
+
+<nav class="nav-type-7 nav-scroll nav-status">
+    <div class="nav-container">
+        <div class="nav-left">
+            <!-- <a href="#">
+              <div class="nav-logo logo-logo-s"></div>
+            </a> -->
+            <a href="#" class="nav-logo-container">
+                <p class="h6"><span>Curious</span> Supplies</p>
+            </a>
+        </div>
+
+        <div class="nav-right">
+            <div class="hidden-md-down">
+                <div class="menu-header-menu-container">
+                    <ul id="menu-header-menu" class="main-nav-links">
+<!--                        <li id="menu-item-15"-->
+<!--                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-8 current_page_item menu-item-15">-->
+<!--                            <a href="#" aria-current="page">Home</a></li>-->
+                        <li id="menu-item-16"
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16"><a
+                                href="./docs">Docs</a></li>
+                        <li id="menu-item-17"
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16"><a
+                                href="./blog">Blog</a></li>
+                        <li id="menu-item-19"
+                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19"><a
+                                href="#buy">Buy Now</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="hidden-md-up">
+                <div class="hamburger-button">
+                    <div class="hamburger-icon" id="hamburger-icon">
+                        <div class="burger"></div>
+                        <div class="ham"></div>
+                        <div class="burger"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="nav-mobile">
+        <div class="menu-header-menu-container">
+            <ul id="menu-header-menu-1" class="nav-links-mobile">
+<!--                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-8 current_page_item menu-item-15">-->
+<!--                    <a href="#" aria-current="page">Home</a></li>-->
+                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16"><a
+                        href="./docs">Docs</a></li>
+                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19"><a
+                        href="#buy">Buy Now</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div id="nav-escape"></div>
+
+<div class="nav-spacer-type-7 nav-scroll"></div>
+
+<main role="main">
+
+    <header class="container-fluid hero-type-6" id="hero">
+        <!-- <img src="./wp-content/themes/ocjanssen/assets/img/backside_cropped.jpg" /> -->
+        <img width="2560" height="1707" src="./index_files/pic_rainbow.JPG"
+             class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt=""
+             sizes="(max-width: 2560px) 100vw, 2560px">
+<!--                     srcset="./index_files/pattern-57-scaled.jpg 2560w, ./index_files/pattern-57-300x200.jpg 300w, ./index_files/pattern-57-1024x683.jpg 1024w, ./index_files/pattern-57-768x512.jpg 768w, ./index_files/pattern-57-1536x1024.jpg 1536w, ./index_files/pattern-57-2048x1365.jpg 2048w"
+-->
+        <div class="container">
+            <div class="row">
+                <div class="col-10 col-offset-1 title">
+                    <h1 class="h1 slide-left-on-scroll is-visible">Discover the Pixel Badge</h1>
+                    <p class="h5 slide-right-on-scroll is-visible">256 Pixels. WiFi enabled. Fully hackable.</p>
+                    <a href="#discover" class="btn-1 btn-m">Discover</a>
+                    <a href="#buy" class="btn-2 btn-m">Buy Now</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="container-fluid content-type-12">
+        <div class="container">
+            <div class="row">
+                <div class="col-10 col-offset-1">
+                    <h2 class="h6 slide-left-on-scroll is-visible">From the creators of CZ19, as seen on</h2>
+                    <a href="https://hackaday.com/2019/07/25/campzone-2019-badge-is-begging-to-become-a-huge-billboard/"
+                       target="blank"><img class="feat-logo" src="./index_files/logo-hackaday.png"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <section id="discover" class="container-fluid content-type-1-l">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-12 col-sm-10 col-lg-6 slide-left-on-scroll">
+                    <div class="title">
+                        <h3 class="h3">Beautiful Full-Colour LEDs</h3>
+                        <p class="p">On a WiFi-enabled board. Pixel addressable. Insanely fast refreshing prevents
+                            flickering on camera.</p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-6">
+                    <div class="img-wrp">
+                        <img src="./index_files/front_zoom.jpg">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="container-fluid content-type-1-r">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-12 col-sm-10 col-lg-6 slide-right-on-scroll">
+                    <div class="title">
+                        <h3 class="h3">Fully Hackable</h3>
+                        <p class="p">Runs on the famous open source <a target="_blank" href="https://wiki.badge.team/#Who_are_badge.team"><u>badge.team firmware</u></a> we helped build. Write your own
+                            apps in Python. Develop via web or USB C. Privacy-first design, no phoning home
+                            whatsoever.</p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-6">
+                    <div class="img-wrp">
+                        <img src="./index_files/side_zoom.jpg">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="container-fluid content-type-1-l">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-12 col-sm-10 col-lg-6 slide-left-on-scroll">
+                    <div class="title">
+                        <h3 class="h3">App Store</h3>
+                        <p class="p">Dozens of premade and community apps. Completely free, now and to eternity. Publish
+                            your own via your browser. Apps install natively on your badge.</p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-6">
+                    <div class="img-wrp">
+                        <img src="./index_files/app_store_cropped.jpg">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="container-fluid content-type-1-r">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-12 col-sm-10 col-lg-6 slide-right-on-scroll">
+                    <div class="title">
+                        <h3 class="h3">Special Founder's Edition</h3>
+                        <p class="p">We're launching with a limited edition of the Pixel. Beautiful full-colour PCB art designed on commission for Pixel. Built-in accelerometer, gyroscope, and temp sensor.</p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-6">
+                    <div class="img-wrp">
+                        <img src="/images/pixel_badge_back.png">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <section class="container-fluid content-type-11">
+        <div class="container">
+            <div class="row">
+                <div class="col-10 col-offset-1">
+                    <h2 class="h3 slide-left-on-scroll">Limitless possibilities</h2>
+                    <p class="p slide-right-on-scroll">Download free apps or build your own with ease.</p>
+                </div>
+            </div>
+            <!--<div class="row">
+              <div class="col-12 col-md-4">
+                <div class="feat-img">
+                  <img src="./wp-content/themes/ocjanssen/assets/img/pattern-57.jpg" />
+                </div>
+              </div>
+              <div class="col-12 col-md-4">
+                <div class="feat-img">
+                  <img src="./wp-content/themes/ocjanssen/assets/img/pattern-57.jpg" />
+                </div>
+              </div>
+              <div class="col-12 col-md-4">
+                <div class="feat-img">
+                  <img src="./wp-content/themes/ocjanssen/assets/img/pattern-57.jpg" />
+                </div>
+              </div>
+            </div>-->
+        </div>
+    </section>
+
+    <section class="container-fluid cta-type-4">
+        <div class="container">
+            <div  id="buy" class="row">
+                <div class="col-10 col-offset-1 title">
+                    <h2 class="h2 slide-left-on-scroll">Get your Pixel Badge</h2>
+                    <p class="p slide-right-on-scroll">The Pixel Badge is now available from our distribution partner
+                        Allnet China. Note: most countries charge additional
+                        import duties or VAT. Ships without battery.</p>
+                    <br/>
+                    <!--<a href="#" class="btn-2 btn-m">Order Now</a>-->
+                    <div id='collection-component-1607769330484'></div>
+                    <script type="text/javascript">
+                        /*<![CDATA[*/
+                        (function () {
+                            var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+                            if (window.ShopifyBuy) {
+                                if (window.ShopifyBuy.UI) {
+                                    ShopifyBuyInit();
+                                } else {
+                                    loadScript();
+                                }
+                            } else {
+                                loadScript();
+                            }
+                            function loadScript() {
+                                var script = document.createElement('script');
+                                script.async = true;
+                                script.src = scriptURL;
+                                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+                                script.onload = ShopifyBuyInit;
+                            }
+                            function ShopifyBuyInit() {
+                                var client = ShopifyBuy.buildClient({
+                                    domain: 'allnetchina.myshopify.com',
+                                    storefrontAccessToken: 'ac524cbc0bb60e893547c611528195e7',
+                                });
+                                ShopifyBuy.UI.onReady(client).then(function (ui) {
+                                    ui.createComponent('collection', {
+                                        id: '159194349670',
+                                        node: document.getElementById('collection-component-1607769330484'),
+                                        moneyFormat: '%24%7B%7Bamount%7D%7D',
+                                        options: {
+                                            "product": {
+                                                "styles": {
+                                                    "product": {
+                                                        "@media (min-width: 601px)": {
+                                                            "max-width": "calc(25% - 20px)",
+                                                            "margin-left": "20px",
+                                                            "margin-bottom": "50px",
+                                                            "width": "calc(25% - 20px)"
+                                                        },
+                                                        "img": {
+                                                            "height": "calc(100% - 15px)",
+                                                            "position": "absolute",
+                                                            "left": "0",
+                                                            "right": "0",
+                                                            "top": "0"
+                                                        },
+                                                        "imgWrapper": {
+                                                            "padding-top": "calc(75% + 15px)",
+                                                            "position": "relative",
+                                                            "height": "0"
+                                                        }
+                                                    }
+                                                },
+                                                "text": {
+                                                    "button": "Add to cart"
+                                                }
+                                            },
+                                            "productSet": {
+                                                "styles": {
+                                                    "products": {
+                                                        "@media (min-width: 601px)": {
+                                                            "margin-left": "-20px"
+                                                        }
+                                                    }
+                                                }
+                                            },
+                                            "modalProduct": {
+                                                "contents": {
+                                                    "img": false,
+                                                    "imgWithCarousel": true,
+                                                    "button": false,
+                                                    "buttonWithQuantity": true
+                                                },
+                                                "styles": {
+                                                    "product": {
+                                                        "@media (min-width: 601px)": {
+                                                            "max-width": "100%",
+                                                            "margin-left": "0px",
+                                                            "margin-bottom": "0px"
+                                                        }
+                                                    }
+                                                },
+                                                "text": {
+                                                    "button": "Add to cart"
+                                                }
+                                            },
+                                            "cart": {
+                                                "text": {
+                                                    "total": "Subtotal",
+                                                    "button": "Checkout"
+                                                }
+                                            }
+                                        },
+                                    });
+                                });
+                            }
+                        })();
+                        /*]]>*/
+                    </script>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+
+<section class="container-fluid cta-type-3">
+    <div class="container">
+        <div class="row" style="padding:0">
+            <center>
+                <p id="fail" style="display: none; padding-left: 28px">Subscription request failed, check if the email is valid or try again later</p>
+                <p id="success" style="display: none; padding-left: 28px">Subscription succeeded</p>
+            </center>
+        </div>
+        <div class="row">
+                  <div class="col-12 col-md-5 col-lg-6 title">
+                    <h3 class="h3">Newsletter</h3>
+                    <p class="p">Subscribe to the Curious Supplies newsletter to be the first to receive community updates, discounts, and early access to new products! (one mail every few months)</p>
+                  </div>
+                  <div class="col-12 col-md-6 col-md-offset-1 col-lg-6 col-lg-offset-0">
+                    <div class="contact-form-type-1">
+                      <div class="wpforms-container wpforms-container-full" id="wpforms-5">
+                          <form id="wpforms-form-5" class="wpforms-validate wpforms-form" data-formid="5" onsubmit="return subscribe()">
+                              <noscript class="wpforms-error-noscript">Please enable JavaScript in your browser to complete this form.</noscript>
+
+                              <div class="wpforms-field-container">
+                                  <div id="wpforms-5-field_1-container" class="wpforms-field wpforms-field-text" data-field-id="1">
+                                      <label class="wpforms-field-label" for="email">Email</label>
+                                      <input type="text" id="email" class="wpforms-field-medium" name="email">
+                                  </div>
+                              </div>
+                              <div class="wpforms-submit-container" style="padding-top: 30px">
+                                  <button type="submit" aria-live="assertive">Submit</button>
+                              </div>
+                          </form>
+                      </div>  <!-- .wpforms-container --><div></div>        </div>
+                  </div>
+        </div>
+    </div>
+</section>
+<footer class="container-fluid footer-type-2" id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-8">
+                <a href="./" class="footer-logo-container">
+                    <p class="h6"><span>Curious</span> Supplies</p>
+                </a>
+                <div class="footer-social"></div>
+            </div>
+            <div class="col-8">
+                <p style="color: white">by Tom Clement</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-8">
+                <h6 class="h6">Contact Us</h6>
+                <a class="p" href="mailto:info@curious.supplies">info@curious.supplies</a>
+                <a class="p" href="https://curious.supplies" target="_blank">curious.supplies</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-8">
+                <p style="color: white">Homepage by <b><u><a class="p" target="_blank"
+                                                             href="https://ocjanssen.nl/">ocjanssen.nl</a></u></b></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-8">
+                <p style="color: white">Pictures by <b><u><a class="p" target="_blank"
+                                                             href="https://blog.quindorian.org/">Quindor</a></u></b></p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<link rel="stylesheet" id="wpforms-full-css" href="./index_files/wpforms-full.css" type="text/css" media="all">
+<script type="text/javascript" src="./index_files/scripts.js"></script>
+<!--<script type="text/javascript" src="./index_files/wp-embed.min.js"></script>-->
+
+<!-- For newsletter subscriptions -->
+<script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-database.js"></script>
+<script>
+    var firebaseConfig = {
+        apiKey: "AIzaSyCfzN6d-EfiLdgR0BEOSAgrNEaMHX2N_dw",
+        authDomain: "curious-mailing-list.firebaseapp.com",
+        databaseURL: "https://curious-mailing-list.firebaseio.com",
+        projectId: "curious-mailing-list",
+        storageBucket: "curious-mailing-list.appspot.com",
+        messagingSenderId: "747005011855",
+        appId: "1:747005011855:web:8120f503c11be783bb0dfa"
+    };
+    firebase.initializeApp(firebaseConfig);
+    function subscribe(e)
+    {
+        const data = document.getElementById('email').value;
+
+        firebase.database().ref('emails').push({ email: data}).then(function(snapshot) {
+            pass(); // some success method
+        }, function(error)
+        {
+            console.log('error' + error);
+            fail(); // some error method
+        });
+        document.getElementById('email').value = '';
+        return false;
+    }
+
+    function fail()
+    {
+        $('#fail').finish().show().delay(5000).fadeOut(1000);
+    }
+    function pass()
+    {
+        $('#success').finish().show().delay(5000).fadeOut(1000);
+    }
+</script>
+
+</body>
+</html>
